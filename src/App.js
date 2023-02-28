@@ -4,7 +4,7 @@ function App() {
   const name = "Kemal";
   const surname = "Ongun";
   const age = 25;
-  const isLoggedIn = false;
+  const isLoggedIn = true;
   const friends = [
     {
       id: 1,
@@ -21,7 +21,7 @@ function App() {
   ];
   return (
     <>
-      <User name={"kemal"} surname={"ongun"} age={age} isLoggedIn={true}
+      <User name={name} surname={surname} age={age} isLoggedIn={isLoggedIn}
       friends={friends}
       />
     </>

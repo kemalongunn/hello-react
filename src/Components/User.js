@@ -16,4 +16,6 @@ function User({ name, surname, isLoggedIn, age,friends }) {
   );
 }
 
+
+
 export default User;
