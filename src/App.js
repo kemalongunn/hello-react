@@ -3,6 +3,7 @@ import CounterApp from "./States/CounterApp";
 import User from "./Props/User";
 import ChangeNameAge from "./States/ChangeNameAge";
 import InputExample from "./States/InputExample";
+import Effect from "./useEffect/Effect";
 function App() {
   const name = "Kemal";
   const surname = "Ongun";
@@ -30,9 +31,10 @@ function App() {
       />
 
       <ChangeNameAge/>
-      <CounterApp/> */}
-    <InputExample/>
+      <CounterApp/>
+    <InputExample/> */}
 
+    <Effect/>
 
     </>
   );
