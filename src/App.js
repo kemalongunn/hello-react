@@ -1,5 +1,6 @@
 import React from "react";
 import User from "./Props/User";
+import ChangeNameAge from "./States/ChangeNameAge";
 function App() {
   const name = "Kemal";
   const surname = "Ongun";
@@ -21,9 +22,13 @@ function App() {
   ];
   return (
     <>
+
       <User name={name} surname={surname} age={age} isLoggedIn={isLoggedIn}
       friends={friends}
       />
+
+      <ChangeNameAge/>
+
     </>
   );
 }
