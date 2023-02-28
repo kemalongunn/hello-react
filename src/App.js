@@ -1,5 +1,5 @@
 import React from "react";
-import User from "./Components/User";
+import User from "./Props/User";
 function App() {
   const name = "Kemal";
   const surname = "Ongun";
