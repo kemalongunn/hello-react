@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import CounterApp from "./States/CounterApp";
 import User from "./Props/User";
 import ChangeNameAge from "./States/ChangeNameAge";
 import InputExample from "./States/InputExample";
 import Effect from "./useEffect/Effect";
+import CounterEffect from "./useEffect/CounterEffect";
+import { isVisible } from "@testing-library/user-event/dist/utils";
 function App() {
+  const [isVisible,setIsvisible] = useState(true);
+
   const name = "Kemal";
   const surname = "Ongun";
   const age = 25;
@@ -12,29 +16,36 @@ function App() {
   const friends = [
     {
       id: 1,
-      name:"Kemal"
+      name: "Kemal",
     },
     {
       id: 2,
-      name:"Ahmet"
+      name: "Ahmet",
     },
     {
       id: 3,
-      name:"Abdulah"
-    }
+      name: "Abdulah",
+    },
   ];
   return (
     <>
-
-      {/* <User name={name} surname={surname} age={age} isLoggedIn={isLoggedIn}
-      friends={friends}
+      {/* <User
+        name={name}
+        surname={surname}
+        age={age}
+        isLoggedIn={isLoggedIn}
+        friends={friends}
       />
 
-      <ChangeNameAge/>
-      <CounterApp/>
-    <InputExample/> */}
+      <ChangeNameAge />
+      <CounterApp />
+      <InputExample />
 
-    <Effect/>
+      <Effect /> */}
+
+      {isVisible &&  <CounterEffect/>}
+      <br/>
+      <button onClick={(() => setIsvisible(!isVisible))}>Toggle</button> 
 
     </>
   );
