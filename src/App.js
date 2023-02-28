@@ -1,4 +1,5 @@
 import React from "react";
+import CounterApp from "./CounterApp";
 import User from "./Props/User";
 import ChangeNameAge from "./States/ChangeNameAge";
 function App() {
@@ -23,11 +24,12 @@ function App() {
   return (
     <>
 
-      <User name={name} surname={surname} age={age} isLoggedIn={isLoggedIn}
+      {/* <User name={name} surname={surname} age={age} isLoggedIn={isLoggedIn}
       friends={friends}
       />
 
-      <ChangeNameAge/>
+      <ChangeNameAge/> */}
+      <CounterApp/>
 
     </>
   );
