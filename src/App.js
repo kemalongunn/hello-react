@@ -1,24 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from "react";
 function App() {
+  const name = "Kemal"
+  const surname = "Ongun"
+  const age = 25
+  const isLoggedIn = false;
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Test
-        </a>
-      </header>
-    </div>
+    <>
+
+      <h1> {isLoggedIn ?`Adım ${name}, soyadım ${surname} yasım ${age}`: "giriş yapmadınız"} </h1>
+
+    </>
   );
 }
 
