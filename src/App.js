@@ -7,6 +7,7 @@ import Effect from "./useEffect/Effect";
 import CounterEffect from "./useEffect/CounterEffect";
 import { isVisible } from "@testing-library/user-event/dist/utils";
 import Contacts from "./ContactsApp";
+import '../src/styles.css';
 function App() {
   const [isVisible,setIsvisible] = useState(true);
 
@@ -29,16 +30,9 @@ function App() {
     },
   ];
 
-  const layout = {
-    marginTop:50,
-    display:"flex",
-    justifyContent:"center",
-    alignItems:"center"
-  }
-
 
   return (
-    <div style={layout}>
+    <div className="container" >
       {/* <User
         name={name}
         surname={surname}

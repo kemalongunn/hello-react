@@ -37,7 +37,7 @@ function Form({setAddContacts,addContacts}) {
         <input name='phone_number' placeholder='phone number' value={formInput.phone_number} onChange={onChangeInput}></input>     
       </div>
 
-      <div>
+      <div className='btn'>
         <button>Add</button>
       </div>
 
