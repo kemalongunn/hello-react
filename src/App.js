@@ -6,6 +6,7 @@ import InputExample from "./States/InputExample";
 import Effect from "./useEffect/Effect";
 import CounterEffect from "./useEffect/CounterEffect";
 import { isVisible } from "@testing-library/user-event/dist/utils";
+import Contacts from "./ContactsApp";
 function App() {
   const [isVisible,setIsvisible] = useState(true);
 
@@ -27,8 +28,17 @@ function App() {
       name: "Abdulah",
     },
   ];
+
+  const layout = {
+    marginTop:50,
+    display:"flex",
+    justifyContent:"center",
+    alignItems:"center"
+  }
+
+
   return (
-    <>
+    <div style={layout}>
       {/* <User
         name={name}
         surname={surname}
@@ -43,11 +53,13 @@ function App() {
 
       <Effect /> */}
 
-      {isVisible &&  <CounterEffect/>}
+      {/* {isVisible &&  <CounterEffect/>}
       <br/>
-      <button onClick={(() => setIsvisible(!isVisible))}>Toggle</button> 
+      <button onClick={(() => setIsvisible(!isVisible))}>Toggle</button>  */}
 
-    </>
+      <Contacts/>
+
+    </div>
   );
 }
 
